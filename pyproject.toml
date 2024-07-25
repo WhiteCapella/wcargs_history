@@ -5,8 +5,11 @@ description = "Default template for PDM package"
 authors = [
     {name = "whitecapella1", email = "whitecapella@naver.com"},
 ]
-dependencies = []
-requires-python = ">=3.11.*"
+dependencies = [
+    "pandas>=2.2.2",
+    "pyarrow>=17.0.0",
+]
+requires-python = "==3.11.*"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -20,7 +23,14 @@ test = [
     "pytest-cov>=5.0.0",
 ]
 pytest = []
-
+[tool.pdm.scripts]
+test = "pytest"
+ctest = "pytest --cov"
+stest = "pytest -s"
+[tool.pytest.ini_option]
+pythonpath = [
+ "src"
+]
 [project.urls]
 Homepage = "https://github.com/WhiteCapella/wcargs_history"
 Issues = "https://github.com/WhiteCapella/wcargs_history/issues"
