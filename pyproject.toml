@@ -1,15 +1,15 @@
 [project]
 name = "wcargs_history"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "whitecapella1", email = "whitecapella@naver.com"},
 ]
 dependencies = []
-requires-python = "==3.11.*"
+requires-python = ">=3.11.*"
 readme = "README.md"
 license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
