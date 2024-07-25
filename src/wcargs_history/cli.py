@@ -31,7 +31,8 @@ def cmd():
             print(f"-d => {args.dt}")
             # TODO 특정 날짜의 명령어 TOP N
         else:
-            print("TODO - 에러나 안내 메세지를 출력")
+            # TODO 에러 출력
+
     else:
         # TODO - 사용법을 출력한다.
         parser.print_help()
