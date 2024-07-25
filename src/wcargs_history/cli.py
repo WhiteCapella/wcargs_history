@@ -31,10 +31,9 @@ def cmd():
             print(f"-d => {args.dt}")
             # TODO 특정 날짜의 명령어 TOP N
         else:
-            # TODO 에러 출력
+            parser.error("-t 옵션은 -d 옵션과 함께 사용해야 합니다.")
 
     else:
-        # TODO - 사용법을 출력한다.
         parser.print_help()
 
     if True:
