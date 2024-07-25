@@ -24,7 +24,10 @@ pytest = []
 test = "pytest"
 ctest = "pytest --cov"
 stest = "pytest -s"
-
+[tool.pytest.ini_option]
+pythonpath = [
+ "src"
+]
 [project.urls]
 Homepage = "https://github.com/WhiteCapella/wcargs_history"
 Issues = "https://github.com/WhiteCapella/wcargs_history/issues"
