@@ -31,6 +31,16 @@ $ [pdm test|pytest]
 # option
 $ pdm add -dG test pytest pytest-cov
 ```
+### deploy
+``` bash
+# dev branch
+$ pip install git+https://github.com/WhiteCapella/wcargs_history@0.2.0/args
+```
+
+```
+# dev main
+$ pip install git+https://github.com/WhiteCapella/wcargs_history@main
+```
 
 ### ref
 ```
