@@ -19,7 +19,6 @@ mkdir 1932
   pdm 1220
    rm 1104
 ```
-
 ### Dev env setting
 
 ```
@@ -46,3 +45,5 @@ $ pip install git+https://github.com/WhiteCapella/wcargs_history@main
 ```
 https://pdm-project.org/en/latest/usage/dependency/#select-a-subset-of-dependency-groups-to-install
 ```
+
+
