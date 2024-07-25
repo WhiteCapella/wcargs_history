@@ -1,8 +1,9 @@
 import pandas as pd
-def read_data():
-    df = pd.read_parquet('~/data/parquet')
-    return df
+from tabulate import tabulate
 
+def read_data(path='~/data/parquet'):
+    df = pd.read_parquet(path)
+    return df
 
 def top(cnt, dt):
     df = read_data()
@@ -10,12 +11,11 @@ def top(cnt, dt):
     sdf = fdf.sort_values(by='cnt', ascending=False).head(cnt)
     ddf = sdf.drop(columns=['dt'])
 
-    r = ddf.to_string(index=False)
-    return r
+    return ddf.to_string(index=False)
 
 
-def count():
+def count(query):
     df = read_data()
     fdf = df[df['cmd'].str.contains(query)]
     cnt = fdf['cnt'].sum()
-    print(cnt)
+    return cnt
