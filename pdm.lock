@@ -5,7 +5,7 @@
 groups = ["default", "test", "pytest"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:c0e806b2962912366b69fde4ec7657cfc6dfa0002983d668d2770502fedd725f"
+content_hash = "sha256:d2224640434dfdf20a195cdd2bc6bc00e777d9cff41660d1b9c64908d2947861"
 
 [[package]]
 name = "colorama"
