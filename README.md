@@ -1,7 +1,8 @@
 # wcargs_history
 
 ### 사용법 
-'''
+
+```
 $ my-history -s ls
 ls 사용 횟수는 1234회 입니다.
 
@@ -17,4 +18,4 @@ mkdir 1932
  sudo 1320
   pdm 1220
    rm 1104
-'''
+```
