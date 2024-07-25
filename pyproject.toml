@@ -25,4 +25,4 @@ pytest = []
 Homepage = "https://github.com/WhiteCapella/wcargs_history"
 Issues = "https://github.com/WhiteCapella/wcargs_history/issues"
 [project.scripts]
-my-history = "wcargs_history.cli:cmd"
+my-history = 'wcargs_history.cli:cmd'
